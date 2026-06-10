@@ -1,20 +1,12 @@
 # DataPrep
 
 Interactive CSV cleaning and exploration app built with React + Vite.
-
 DataPrep helps you inspect, clean, transform, and export tabular data directly in the browser before using it in ML workflows, analytics pipelines, or LLM fine-tuning datasets.
 
 ## Why this project
 
-Preparing CSV data is usually a slow back-and-forth between spreadsheets, scripts, and notebooks.
-DataPrep provides one lightweight UI to do the essentials fast:
-
-- detect quality issues (duplicates, missing values, outliers)
-- edit rows and remove columns directly from the table
-- apply numeric transformations on selected columns
-- split cleaned data into multiple exports
-
-All processing happens client-side in your browser.
+I'm actually learning about the how's and why's of machine learning and the most important aspect of it seems to be the Data. Having a reliable and fleshed out Data isn't easy.
+So for my future project of creating a small LLM or just a ML algorithm. This project will help refine the data I collect for later.
 
 ## Features
 
@@ -61,14 +53,6 @@ npm run lint
 npm run preview
 ```
 
-## Try with sample data
-
-A sample dataset is included:
-
-- `exemple/used_cars_sample.csv`
-
-Use it to quickly test import, detection, transformation, and export flows.
-
 ## Typical workflow
 
 1. Import a CSV file.
@@ -76,7 +60,7 @@ Use it to quickly test import, detection, transformation, and export flows.
 3. Filter to focus on problematic rows.
 4. Edit/delete rows or remove irrelevant columns.
 5. Apply numeric transformations to selected columns.
-6. Export the cleaned CSV (or split it into 3 files).
+6. Export the cleaned CSV (or split it into 3 files: Training, Validation and Testing).
 
 ## Privacy
 
@@ -84,8 +68,6 @@ Data stays local: no backend upload, no server-side processing.
 
 ## Roadmap ideas
 
-- support for additional delimiters (semicolon/tab)
-- saved cleaning recipes
-- column type overrides
-- richer charts and profiling metrics
+- add the ability to 'mix' the data to have a more balanced data spread if the data was at first sorted
+- drop the very AI like UI (didn't want to work much on the front the v1) for a better one
 
